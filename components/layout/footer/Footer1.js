@@ -11,7 +11,7 @@ export default function Footer1() {
                                 <div className="widget-logo flex-grow">
                                     <div className="logo-footer" id="logo-footer">
                                         <Link href="/">
-                                            <img id="logo_footer" src="/assets/images/logo/logo_navbar.png" data-retina="assets/images/logo/logo@2x.png" />
+                                            <img id="logo_footer" src="/assets/images/logo/logo_navbar.png" data-retina="assets/images/logo/logo_h.png" />
                                         </Link>
                                     </div>
                                 </div>
