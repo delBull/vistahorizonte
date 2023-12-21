@@ -29,7 +29,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                                     <div className="flat-wallet flex">
                                         <div id="wallet-header">
                                             <Link href="/market-wallet" id="connectbtn" className="tf-button style-1">
-                                                <span>Wallet connect</span>
+                                                <span>Login</span>
                                                 <i className="icon-wa" />
                                             </Link>
                                         </div>

@@ -2554,3 +2554,21 @@ body.background-white .tf-mouse-outer {
     background-color: #000;
     text-align: right;
 }
+
+.white-section {
+    background-color: white;
+}
+
+.eagle-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80vh;
+    opacity: 0.4;
+}
+
+.logo-rotador {
+    top: 20vh;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
