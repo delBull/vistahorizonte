@@ -2531,3 +2531,26 @@ body.background-white .tf-mouse-inner {
 body.background-white .tf-mouse-outer {
     border-color: rgba(22, 22, 22, 1);
 }
+
+/* card info */
+
+.card-info {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 20%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.tf-card-box:hover .card-info {
+    padding-top: 10%;
+    opacity: 0.85;
+    background-color: #000;
+    text-align: right;
+}

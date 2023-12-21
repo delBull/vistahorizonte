@@ -5,7 +5,9 @@ import Link from "next/link"
 import Action8 from "@/components/sections/Action8"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Element } from 'react-scroll';
+import FlatTitle2 from "@/components/sections/FlatTitle2"
 import { Swiper, SwiperSlide } from "swiper/react"
+  
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -66,9 +68,12 @@ export default function Home() {
                                 <div className="col-12 pages-title">
                                     <div className="content">
                                         <h1 data-wow-delay="0s" className="wow fadeInUp">Invierte En El Futuro Inmobiliario</h1>
-                                        <p data-wow-delay="0.1s" className="wow fadeInUp">Iníciate en la Tokenización y forma parte de Inversionies respaldadas 100% por bienes inmuebles.</p>
+                                        <h3 data-wow-delay="0.1s" className="wow fadeInUp">Aplicacamos herramientas blockchain</h3>
+                                        <h3 data-wow-delay="0.1s" className="wow fadeInUp">para impulsar el rendimiento en el sector inmobiliario.</h3>
+                                        <div style={{ margin: '30px' }}></div>
+
                                         <div data-wow-delay="0.2s" className="wow fadeInUp flat-button flex justify-center">
-                                            <Link href="#" className="tf-button style-1 h50 w190">Get started <i className="icon-arrow-up-right2" /></Link>
+                                            <Link href="#" className="tf-button style-1 h50 w190">¡Empieza Ahora! <i className="icon-arrow-up-right2" /></Link>
                                         </div>
                                     </div>
                                     <div className="icon-background">
@@ -83,12 +88,18 @@ export default function Home() {
                                                 <SwiperSlide>
                                                     <div className="tf-card-box style-7">
                                                         <div className="card-media">
-                                                            <Link href="#">
-                                                                <img src="/assets/images/box-item/about-us-03.jpg" alt="" />
+                                                            <Link href="">
+                                                                <img src="/assets/images/realestate4.jpeg" alt="" />
                                                             </Link>
                                                         </div>
-                                                        <div className="button-place-bid">
-                                                            <a onClick={handleBidModal} href="#" className="tf-button"><span>Place Bid</span></a>
+                                                        <div className="card-info">
+                                                                <p>El crecimiento de los Fideicomisos de Inversión en Bienes Raíces 
+                                                                    (REITs) durante la década de 1990 fue sin precedentes y probablemente 
+                                                                    posicionó la clase de activos de manera permanente en el panorama de 
+                                                                    inversiones más amplio. Según la 
+                                                                    Asociación Nacional de Fideicomisos de Inversión en Bienes Raíces 
+                                                                    (NAREIT), en 1990 había 119 REITs con una capitalización de mercado 
+                                                                    total de $8.7 mil millones.</p>
                                                         </div>
                                                     </div>
                                                 </SwiperSlide>
@@ -96,11 +107,14 @@ export default function Home() {
                                                     <div className="tf-card-box style-7">
                                                         <div className="card-media">
                                                             <Link href="#">
-                                                                <img src="/assets/images/box-item/about-us-01.jpg" alt="" />
+                                                                <img src="/assets/images/realestate7.jpeg" alt="" />
                                                             </Link>
                                                         </div>
-                                                        <div className="button-place-bid">
-                                                            <a onClick={handleBidModal} href="#" className="tf-button"><span>Place Bid</span></a>
+                                                        <div className="card-info">
+                                                        <p>El valor de los activos inmobiliarios a nivel global aumentó un 5% en 2020 
+                                                            hasta alcanzar los 326,5 billones de dólares (unos 280 billones de euros), 
+                                                            lo que convierte al inmobiliario en la fuente de riqueza mundial más relevante, 
+                                                            con más valor que todas las acciones y los títulos de deuda combinados.</p>
                                                         </div>
                                                     </div>
                                                 </SwiperSlide>
@@ -108,23 +122,18 @@ export default function Home() {
                                                     <div className="tf-card-box style-7">
                                                         <div className="card-media">
                                                             <Link href="#">
-                                                                <img src="/assets/images/box-item/about-us-02.jpg" alt="" />
+                                                                <img src="/assets/images/realestate.jpeg" alt="" />
                                                             </Link>
                                                         </div>
-                                                        <div className="button-place-bid">
-                                                            <a onClick={handleBidModal} href="#" className="tf-button"><span>Place Bid</span></a>
-                                                        </div>
-                                                    </div>
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    <div className="tf-card-box style-7">
-                                                        <div className="card-media">
-                                                            <Link href="#">
-                                                                <img src="/assets/images/box-item/about-us-01.jpg" alt="" />
-                                                            </Link>
-                                                        </div>
-                                                        <div className="button-place-bid">
-                                                            <a onClick={handleBidModal} href="#" className="tf-button"><span>Place Bid</span></a>
+                                                        <div className="card-info">
+                                                        <p style={{ fontSize: '12px' }}>El mercado inmobiliario, históricamente vinculado a la economía, ha 
+                                                            experimentado transformaciones significativas. Aunque los activos 
+                                                            inmobiliarios globales valen US$ 326,5 billones, el acceso a este mercado 
+                                                            ha sido limitado por el alto costo de inversión. Sin embargo, nuevas 
+                                                            tecnologías, como la tokenización, han surgido para cambiar esta dinámica. 
+                                                            Al fraccionar el valor de la propiedad, la tokenización permite la 
+                                                            participación de inversores principiantes con menos capital, democratizando 
+                                                            el acceso al sector y creando nuevas oportunidades de inversión.</p>
                                                         </div>
                                                     </div>
                                                 </SwiperSlide>
@@ -142,9 +151,9 @@ export default function Home() {
                                     <div className="counter__body-1">
                                         <div className="counter-1">
                                             <div className="number-counter">
-                                                <span className="number" data-speed={3000} data-to={99} data-inviewport="yes"><CounterUp count={99} time={1} /></span>K+
+                                                <span className="number" data-speed={3000} data-to={200} data-inviewport="yes"><CounterUp count={200} time={1} /></span>B+
                                             </div>
-                                            <h6 className="title">Artwork</h6>
+                                            <h6 className="title">Velor Antes de la crisis financiera 2008</h6>
                                         </div>
                                         <div className="space">
                                             <svg width={80} height={19} viewBox="0 0 80 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,9 +165,9 @@ export default function Home() {
                                         </div>
                                         <div className="counter-1">
                                             <div className="number-counter">
-                                                <span className="number" data-speed={3000} data-to={72} data-inviewport="yes"><CounterUp count={72} time={1} /></span>K+
+                                                <span className="number" data-speed={3000} data-to={300} data-inviewport="yes"><CounterUp count={300} time={1} /></span>B+
                                             </div>
-                                            <h6 className="title">Auction</h6>
+                                            <h6 className="title">Después de 2009 el valor del mercado inmobiliario</h6>
                                         </div>
                                         <div className="space">
                                             <svg width={80} height={19} viewBox="0 0 80 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,9 +179,9 @@ export default function Home() {
                                         </div>
                                         <div className="counter-1">
                                             <div className="number-counter">
-                                                <span className="number" data-speed={3000} data-to={35} data-inviewport="yes"><CounterUp count={35} time={1} /></span>K+
+                                                <span className="number" data-speed={200} data-to={2000} data-inviewport="yes"><CounterUp count={2} time={1} /></span>010
                                             </div>
-                                            <h6 className="title">Artist</h6>
+                                            <h6 className="title">Adopción de tecnologías; AI, AR, Blockchain</h6>
                                         </div>
                                         <div className="space">
                                             <svg width={80} height={19} viewBox="0 0 80 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,9 +193,9 @@ export default function Home() {
                                         </div>
                                         <div className="counter-1">
                                             <div className="number-counter">
-                                                <span className="number" data-speed={3000} data-to={128} data-inviewport="yes"><CounterUp count={128} time={1} /></span>K+
+                                                <span className="number" data-speed={3000} data-to={87} data-inviewport="yes"><CounterUp count={87} time={1} /></span>%
                                             </div>
-                                            <h6 className="title">NFTs Created</h6>
+                                            <h6 className="title">De todos los tokens de valor provienen del sector inmobiliario</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -194,34 +203,63 @@ export default function Home() {
                         </div>
                     </div>
 {/* aztecaz */}
+
+{/* Experiencia */}
+<div style={{ margin: '100px' }}></div>
+                <div className="themesflat-container w-full">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <div className="">
+                                <h2 data-wow-delay="0s" className="wow fadeInUp">Utilizamos nuestra vasta experiencia, datos exclusivos y 
+                                tecnología de punta para generar retornos superiores</h2>
+                                <div style={{ margin: '10px' }}></div>
+                                <p style={{ fontSize: '18px' }} data-wow-delay="0.1s" className="wow fadeInUp">Vamos más allá de las inversiones convencionales y 
+                                reconociendo que, con el tiempo, la inflación puede afectar el valor de propiedad.</p>
+                                <div style={{ margin: '10px' }}></div>
+                                <div data-wow-delay="0.2s">
+                                    <button>$5T Oportunidad en viviendas unifamiliares</button>
+                                    <div style={{ margin: '10px' }}></div>
+                                    <button>14 millones de hogares unifamiliares en alquiler</button>
+                                    <div style={{ margin: '10px' }}></div>
+                                    <button>10 millones de propietarios de viviendas unifamiliares</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div style={{ margin: '100px' }}></div>
+{/* end Experiencia */}
                     <Element name="aztecaz">
                     <div className="tf-section-2 widget-box-icon">
                         <div className="themesflat-container">
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className="heading-section-1">
-                                        <h2 className="tf-title pb-40">¿Por qué elegir a Aztecaz?</h2>
+                                        <h2 className="tf-title pb-40">¿Por qué ahora?</h2>
                                     </div>
                                 </div>
                                 <div data-wow-delay="0s" className="wow fadeInUp col-md-4">
                                     <div className="box-icon-item">
-                                        <img src="/assets/images/item-background/about-01.png" alt="" />
-                                        <div className="title"><Link href="#">Flexible payment</Link></div>
-                                        <p>Fusce non dignissim velit, sit amet semper eros. Quisque orci est</p>
+                                        <img src="/assets/images/Graph1.webp" alt="" />
+                                        <div className="title"><Link href="#">Crecimiento ≥ Inlfación</Link></div>
+                                        <p style={{ fontSize: '16px' }}>Históricamente, el crecimiento de los precios de las viviendas 
+                                        y los alquileres ha superado la tasa de inflación.</p>
                                     </div>
                                 </div>
                                 <div data-wow-delay="0.1s" className="wow fadeInUp col-md-4">
                                     <div className="box-icon-item">
-                                        <img src="/assets/images/item-background/about-02.png" alt="" />
-                                        <div className="title"><Link href="#">Huge data warehouse</Link></div>
-                                        <p>Fusce non dignissim velit, sit amet semper eros. Quisque orci est</p>
+                                        <img src="/assets/images/Graph2.webp" alt="" />
+                                        <div className="title"><Link href="#">ROI en Aumento</Link></div>
+                                        <p style={{ fontSize: '16px' }}>Desde 2016, los rendimientos de las viviendas 
+                                         en alquiler han superado a la mayoría de los sectores inmobiliarios.</p>
                                     </div>
                                 </div>
                                 <div data-wow-delay="0.2s" className="wow fadeInUp col-md-4">
                                     <div className="box-icon-item">
-                                        <img src="/assets/images/item-background/about-03.png" alt="" />
-                                        <div className="title"><Link href="#">3 layer security</Link></div>
-                                        <p>Fusce non dignissim velit, sit amet semper eros. Quisque orci est</p>
+                                        <img src="/assets/images/graph3.webp" alt="" />
+                                        <div className="title"><Link href="#">Desbalance de Inventario</Link></div>
+                                        <p style={{ fontSize: '16px' }}>La oferta de viviendas unifamiliares ha estado insuficientemente abastecida durante 
+                                            más de una década</p>
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +281,7 @@ export default function Home() {
                                 <div data-wow-delay="0s" className="wow fadeInUp col-md-3 col-6">
                                     <div className="our-team-item pb-38 text-center">
                                         <img src="/assets/images/avatar/team-01.png" alt="" />
-                                        <div className="name"><Link href="#">Marvin McKinney</Link></div>
+                                        <div className="name"><Link href="#">Sue Del Toro</Link></div>
                                         <div className="info">CEO, Director</div>
                                         <div className="widget-social">
                                             <ul className="flex justify-center">
@@ -256,8 +294,8 @@ export default function Home() {
                                 <div data-wow-delay="0.1s" className="wow fadeInUp col-md-3 col-6">
                                     <div className="our-team-item pb-38 text-center">
                                         <img src="/assets/images/avatar/team-02.png" alt="" />
-                                        <div className="name"><Link href="#">Marvin McKinney</Link></div>
-                                        <div className="info">CEO, Director</div>
+                                        <div className="name"><Link href="#">Celina Del Toro</Link></div>
+                                        <div className="info">Rental Manager</div>
                                         <div className="widget-social">
                                             <ul className="flex justify-center">
                                                 <li><Link href="#" className="icon-facebook" /></li>
@@ -269,8 +307,8 @@ export default function Home() {
                                 <div data-wow-delay="0.2s" className="wow fadeInUp col-md-3 col-6">
                                     <div className="our-team-item pb-38 text-center">
                                         <img src="/assets/images/avatar/team-03.png" alt="" />
-                                        <div className="name"><Link href="#">Marvin McKinney</Link></div>
-                                        <div className="info">CEO, Director</div>
+                                        <div className="name"><Link href="#">Erwin Mayoral</Link></div>
+                                        <div className="info">Real Estate Expert</div>
                                         <div className="widget-social">
                                             <ul className="flex justify-center">
                                                 <li><Link href="#" className="icon-facebook" /></li>
@@ -282,8 +320,8 @@ export default function Home() {
                                 <div data-wow-delay="0.3s" className="wow fadeInUp col-md-3 col-6">
                                     <div className="our-team-item pb-38 text-center">
                                         <img src="/assets/images/avatar/team-04.png" alt="" />
-                                        <div className="name"><Link href="#">Marvin McKinney</Link></div>
-                                        <div className="info">CEO, Director</div>
+                                        <div className="name"><Link href="#">Bruce Wayne</Link></div>
+                                        <div className="info">Cave Owner</div>
                                         <div className="widget-social">
                                             <ul className="flex justify-center">
                                                 <li><Link href="#" className="icon-facebook" /></li>
@@ -295,7 +333,7 @@ export default function Home() {
                                 </div>
                             <div className="row">
                                 <div className="col-12">
-                                    <Link href="#" className="tf-button style-1 h50 w190 m-auto">Empieza ya!<i className="icon-arrow-up-right2" /></Link>
+                                    <Link href="/market-wallet" className="tf-button style-1 h50 w190 m-auto">Empieza ya!<i className="icon-arrow-up-right2" /></Link>
                                 </div>
                             </div>
                         </div>
