@@ -5,7 +5,7 @@ import Link from "next/link"
 import Action8 from "@/components/sections/Action8"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Element } from 'react-scroll';
-import FlatTitle2 from "@/components/sections/FlatTitle2"
+import TextSlider1 from "@/components/sections/TextSlider1"
 import { Swiper, SwiperSlide } from "swiper/react"
   
 
@@ -49,6 +49,8 @@ const CounterUp = dynamic(() => import('@/components/elements/CounterUp'), {
 })
 
 import { useState } from "react"
+import TitileSlider2 from "@/components/slider/TitileSlider2"
+import FlatTitle2 from "@/components/sections/FlatTitle2"
 export default function Home() {
 
     const [isBidModal, setBidModal] = useState(false)
@@ -247,15 +249,17 @@ export default function Home() {
             <h1 style={{ color: 'black', fontSize: '54px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp">disponible como</h1>
             <h1 style={{ color: 'black', fontSize: '54px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp">servicio.</h1>
             <div style={{ margin: '50px' }}></div>
-                <div style={{ backgroundColor: 'rgba(22, 22, 22, 1)', paddingRight: '10px', paddingTop: '80px', paddingBottom: '200px', borderRadius: '25px'  }}>
+                <div style={{ backgroundColor: 'rgba(22, 22, 22, 1)', paddingRight: '10px', paddingBottom: '200px', borderRadius: '25px'  }}>
                         <div className="col-md-6" style={{ textAlign: 'right', right: '0', justifyContent: 'right', left: '50%'}}>
-                            <div className="">
-                                <p style={{ fontSize: '26px', color: 'white'}} data-wow-delay="0s" className="wow fadeInUp" >El modelo de inversión inmobiliario que utilizamos como servicio 
+                            
+                              {/*  <p style={{ fontSize: '26px', color: 'white'}} data-wow-delay="0s" className="wow fadeInUp" >El modelo de inversión inmobiliario que utilizamos como servicio 
                                 permite a inversores de todos los tamaños aprovechar la tecnología y servicios bajo demanda para adquirir, 
                                 gestionar y vender propiedades a gran escala con mayor precisión, rapidez y eficiencia que 
                                 los métodos tradicionales</p>
-                                <div style={{ margin: '10px' }}></div>
-                            </div>
+                                <div style={{ margin: '10px' }}></div> */}
+
+                                <TextSlider1 />
+
                         </div>
                         <div className="logo-rotate logo-rotador">
                                     <div className="logoimg">

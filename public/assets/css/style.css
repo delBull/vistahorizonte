@@ -2572,3 +2572,14 @@ body.background-white .tf-mouse-outer {
     margin-bottom: 20px;
     margin-left: 50px;
 }
+
+.text-slider {
+    display: absolute;
+    color: white;
+    background-color: rgba(22, 22, 22, 1) !important;
+}
+
+.swipper-space {
+    width: 500px;
+    right: 10vh;
+}
