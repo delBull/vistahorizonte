@@ -296,8 +296,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="bottom">
-                                <p>© {new Date().getFullYear()} </p>
-                                <p>ATECAZ: HUB INMOBILIARIO</p>
+                                <p>POWERED BY DREAMHUB</p>
                             </div>
                         </div>
                         <div className="content-tabs">

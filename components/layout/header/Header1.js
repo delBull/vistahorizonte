@@ -78,42 +78,40 @@ export default function Header1({ isMobileMenu, handleMobileMenu }) {
                                 </form> */}
                             </div>
                             <div className="widget widget-categories">
-                                <h5 className="title-widget">Categories</h5>
+                                <h5 className="title-widget">Categorías</h5>
                                 <ul>
                                     <li>
-                                        <div className="cate-item"><Link href="#">NFTs</Link></div>
+                                        <div className="cate-item"><Link href="#">NFT Rentas</Link></div>
                                         <div className="number">(1.483)</div>
                                     </li>
                                     <li>
-                                        <div className="cate-item"><Link href="#">Digital Art</Link></div>
+                                        <div className="cate-item"><Link href="#">NFT Accionarios</Link></div>
                                         <div className="number">(97)</div>
                                     </li>
                                     <li>
-                                        <div className="cate-item"><Link href="#">Crypto</Link></div>
+                                        <div className="cate-item"><Link href="#">Tokens por Respaldo</Link></div>
                                         <div className="number">(45)</div>
                                     </li>
                                     <li>
-                                        <div className="cate-item"><Link href="#">Technology</Link></div>
+                                        <div className="cate-item"><Link href="#">Inversiones NFTs</Link></div>
                                         <div className="number">(728)</div>
                                     </li>
                                 </ul>
                             </div>
                             <div className="widget widget-menu style-4">
-                                <h5 className="title-widget">Company</h5>
+                                <h5 className="title-widget">Empresa</h5>
                                 <ul>
-                                    <li><Link href="#">Help center</Link></li>
-                                    <li><Link href="#">Platform status</Link></li>
+                                    <li><Link href="#">Centro de ayuda</Link></li>
+                                    <li><Link href="#">Comunidad Blockchain</Link></li>
                                 </ul>
                             </div>
                             <div className="widget">
-                                <h5 className="title-widget">Join the community</h5>
+                                <h5 className="title-widget">Síguenos</h5>
                                 <div className="widget-social">
                                     <ul className="flex">
                                         <li><Link href="#" className="icon-facebook" /></li>
                                         <li><Link href="#" className="icon-twitter" /></li>
                                         <li><Link href="#" className="icon-vt" /></li>
-                                        <li><Link href="#" className="icon-tiktok" /></li>
-                                        <li><Link href="#" className="icon-youtube" /></li>
                                     </ul>
                                 </div>
                             </div>

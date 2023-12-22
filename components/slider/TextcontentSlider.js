@@ -5,13 +5,13 @@ import BidModal from "../elements/BidModal"
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation, FreeMode, EffectCoverflow],
-    loop: false,
+    loop: true,
     spaceBetween: 0,
     slidesPerView: 1,
     centeredSlides: true,
     observer: true,
     observeParents: true,
-    freeMode: false,
+    freeMode: true,
     watchSlidesProgress: true,
     effect: 'coverflow',
     grabCursor: true,

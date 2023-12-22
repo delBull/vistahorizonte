@@ -49,8 +49,6 @@ const CounterUp = dynamic(() => import('@/components/elements/CounterUp'), {
 })
 
 import { useState } from "react"
-import TitileSlider2 from "@/components/slider/TitileSlider2"
-import FlatTitle2 from "@/components/sections/FlatTitle2"
 export default function Home() {
 
     const [isBidModal, setBidModal] = useState(false)
@@ -80,7 +78,7 @@ export default function Home() {
             <Layout headerStyle={1} footerStyle={1} pageCls="about-us-page">
 
             <div className="flat-pages-title-home2 relative">
-            <div style={{ padding: '50px' }}></div>
+            <div className="mobile-none" style={{ padding: '50px' }}></div>
                 <div className="themesflat-container w-full">
                     <div className="row">
                         <div className="col-md-9">
@@ -114,9 +112,7 @@ export default function Home() {
                                                 <SwiperSlide>
                                                     <div className="tf-card-box style-7">
                                                         <div className="card-media">
-                                                            <Link href="">
                                                                 <img src="/assets/images/realestate4.jpeg" alt="" />
-                                                            </Link>
                                                         </div>
                                                         <div className="card-info">
                                                                 <p>El crecimiento de los Fideicomisos de Inversión en Bienes Raíces 
@@ -132,9 +128,7 @@ export default function Home() {
                                                 <SwiperSlide>
                                                     <div className="tf-card-box style-7">
                                                         <div className="card-media">
-                                                            <Link href="#">
                                                                 <img src="/assets/images/realestate7.jpeg" alt="" />
-                                                            </Link>
                                                         </div>
                                                         <div className="card-info">
                                                         <p>El valor de los activos inmobiliarios a nivel global aumentó un 5% en 2020 
@@ -147,9 +141,7 @@ export default function Home() {
                                                 <SwiperSlide>
                                                     <div className="tf-card-box style-7">
                                                         <div className="card-media">
-                                                            <Link href="#">
                                                                 <img src="/assets/images/realestate.jpeg" alt="" />
-                                                            </Link>
                                                         </div>
                                                         <div className="card-info">
                                                         <p style={{ fontSize: '12px' }}>El mercado inmobiliario, históricamente vinculado a la economía, ha 
@@ -232,6 +224,7 @@ export default function Home() {
 {/* end Intro */}
 
 {/* Experiencia part1 */}
+            <Element name="experiencia">
                 <div className="themesflat-container w-full white-section">
                 <div style={{ padding: '50px' }}></div>
                     <div className="row">
@@ -255,9 +248,9 @@ export default function Home() {
 
 {/* Experiencia part2 */}
 <div className="div-black" style={{ backgroundColor: 'white', padding: '80px'}}>
-            <h1 style={{ color: 'black', fontSize: '54px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp white-txt">Nuestra experiencia,</h1>
-            <h1 style={{ color: 'black', fontSize: '54px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp white-txt">disponible como</h1>
-            <h1 style={{ color: 'black', fontSize: '54px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp white-txt">servicio.</h1>
+            <h1 style={{ color: 'black', fontSize: '52px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp white-txt">Nuestra experiencia,</h1>
+            <h1 style={{ color: 'black', fontSize: '52px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp white-txt">disponible como</h1>
+            <h1 style={{ color: 'black', fontSize: '52px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp white-txt">servicio.</h1>
             <div style={{ margin: '50px' }}></div>
                 <div className="div-text-slider">
                         <div className="col-md-6 div-right-mobile" style={{ textAlign: 'right', right: '0', justifyContent: 'right', left: '50%'}}>
@@ -279,9 +272,11 @@ export default function Home() {
                                 </div>
                     </div>
                 </div>
+                </Element>
 {/* end Experiencia part2 */}
 
 {/* Steps Soluciones */}
+<Element name="solución">
 <div className="mobile-none" style={{ padding: '100px' }}></div>
 <div className="tf-section create-sell">
                 <div className="themesflat-container">
@@ -382,6 +377,7 @@ export default function Home() {
                                 </div>
                             </div>
             <div style={{ padding: '50px' }}></div>
+            </Element>
 {/* end Steps Soluciones */}
 
 <div style={{ padding: '50px' }}></div>
@@ -587,9 +583,8 @@ export default function Home() {
                 <BidModal handleBidModal={handleBidModal} isBidModal={isBidModal} />
 
 {/* contact */}
-<div>
-                    
-                    
+            <Element name="contacto">
+                <div>
                     <div className="tf-section-2 widget-box-icon">
                         <div className="themesflat-container">
                             <div className="row">
@@ -619,9 +614,8 @@ export default function Home() {
                                 <div data-wow-delay="0.2s" className="wow fadeInUp col-md-4">
                                     <div className="box-icon-item">
                                         <img src="/assets/images/box-icon/phone.png" alt="" />
-                                        <div className="title"><Link href="#">Teléfonos</Link></div>
-                                        <p>+(52) 322-102-3028 <br />
-                                            +(52) 322-131-8300</p>
+                                        <div className="title"><Link href="#">WhatsApp</Link></div>
+                                        <p>+(52) 322-102-3028</p>
                                     </div>
                                 </div>
                             </div>
@@ -661,6 +655,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                </Element>
 {/* end contact*/}
 
             </Layout>
