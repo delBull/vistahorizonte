@@ -1144,7 +1144,6 @@ a:focus {
     position: absolute;
     padding: 6px 0 7px 0;
     right: 15px;
-    top: 0;
     justify-content: end;
     align-items: center;
 }
@@ -1154,6 +1153,7 @@ a:focus {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    margin-right: 15px;
 }
 
 .canvas span,
@@ -1162,7 +1162,7 @@ a:focus {
     position: absolute;
     content: "";
     height: 3px;
-    background-color: #fff;
+    background-color: #000000;
     border-radius: 5px;
     right: 2.5px;
     -webkit-transform: translateY(-50%);
@@ -2583,3 +2583,29 @@ body.background-white .tf-mouse-outer {
     width: 500px;
     right: 10vh;
 }
+div#site-header-inner {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    vertical-align: center;
+}
+
+div#page {
+    padding-top: 10px;
+}
+
+.themesflat-container {
+    width: 100%;
+}
+
+.header_1.header-fixed {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ocultar {
+    transform: translateY(-100%);
+  }
+  
+  .mostrar {
+    transform: translateY(0);
+  }

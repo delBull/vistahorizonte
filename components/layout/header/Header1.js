@@ -1,13 +1,30 @@
 import Link from "next/link"
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
-export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
-    const [isSidebar, setSidebar] = useState(false)
+export default function Header1({ isMobileMenu, handleMobileMenu }) {
+    const [isSidebar, setSidebar] = useState(false);
     const handleSidebar = () => setSidebar(!isSidebar)
+    const [lastScrollTop, setLastScrollTop] = useState(0);
+    const [shouldHide, setShouldHide] = useState(false);
+  
+    const handleScroll = () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        setShouldHide(scrollTop > lastScrollTop && scrollTop > 0);
+        setLastScrollTop(scrollTop);
+      };        
+  
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, [lastScrollTop]);
+  
     return (
-        <>
-            <header id="header_main" className={`header_1 header-fixed ${scroll ? "is-fixed is-small" : ""}`}>
+      <>
+        <header id="header_main" className={`header_1 header-fixed ${shouldHide ? 'ocultar' : ''}`}>
                 <div className="themesflat-container">
                     <div className="row">
                         <div className="col-md-12">
@@ -16,7 +33,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                                     <div id="site-logo">
                                         <div id="site-logo-inner">
                                             <Link href="/" rel="home" className="main-logo">
-                                                <img id="logo_header" src="/assets/images/logo/logo_navbar.png" data-retina="assets/images/logo/logo_h.png" />
+                                                <img id="logo_header" src="/assets/images/logo/logo_navbar_dark.png" data-retina="assets/images/logo/logo_h_dark.png" />
                                             </Link>
                                         </div>
                                     </div>{/* logo */}

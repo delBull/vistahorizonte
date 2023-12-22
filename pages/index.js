@@ -76,23 +76,33 @@ export default function Home() {
     return (
         <>
 
+{/* Cover */}
             <Layout headerStyle={1} footerStyle={1} pageCls="about-us-page">
 
+            <div className="flat-pages-title-home2 relative">
+            <div style={{ padding: '50px' }}></div>
+                <div className="themesflat-container w-full">
+                    <div className="row">
+                        <div className="col-md-9">
+                            <div className="content">
+                                <h1 data-wow-delay="0s" className="wow fadeInUp">Invierte En El Futuro Real Estate</h1>
+                                        <p data-wow-delay="0.1s" className="wow fadeInUp" style={{ fontSize: '26px', lineHeight: '1.1' }}>Aplicacamos herramientas blockchain para impulsar el rendimiento en el sector inmobiliario.</p>
+                                <div data-wow-delay="0.2s" className="wow fadeInUp flat-button flex">
+                                    <Link href="/market-wallet" className="tf-button style-1 h50 w190 mr-30">¡Empieza Ahora!<i className="icon-arrow-up-right2" /></Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{/* end Cover */}
+
+{/* Intro */}
                 <div>
                     <div className="page-title about-us relative">
                         <div className="themesflat-container">
                             <div className="row">
                                 <div className="col-12 pages-title">
-                                    <div className="content">
-                                        <h1 data-wow-delay="0s" className="wow fadeInUp">Invierte En El Futuro Real Estate</h1>
-                                        <h3 data-wow-delay="0.1s" className="wow fadeInUp">Aplicacamos herramientas blockchain</h3>
-                                        <h3 data-wow-delay="0.1s" className="wow fadeInUp">para impulsar el rendimiento en el sector inmobiliario.</h3>
-                                        <div style={{ margin: '30px' }}></div>
-
-                                        <div data-wow-delay="0.2s" className="wow fadeInUp flat-button flex justify-center">
-                                            <Link href="#" className="tf-button style-1 h50 w190">¡Empieza Ahora! <i className="icon-arrow-up-right2" /></Link>
-                                        </div>
-                                    </div>
                                     <div className="icon-background">
                                         <img className="absolute item2" src="/assets/images/item-background/item10.png" alt="" />
                                         <img className="absolute item3" src="/assets/images/item-background/item12.png" alt="" />
@@ -219,7 +229,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div style={{ padding: '50px' }}></div>
-{/* aztecaz */}
+{/* end Intro */}
 
 {/* Experiencia part1 */}
                 <div className="themesflat-container w-full white-section">
