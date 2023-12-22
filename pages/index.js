@@ -5,7 +5,7 @@ import Link from "next/link"
 import Action8 from "@/components/sections/Action8"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Element } from 'react-scroll';
-import TextSlider1 from "@/components/sections/TextSlider1"
+import TextcontentSlider from "@/components/slider/TextcontentSlider"
 import { Swiper, SwiperSlide } from "swiper/react"
   
 
@@ -235,10 +235,10 @@ export default function Home() {
                 <div className="themesflat-container w-full white-section">
                 <div style={{ padding: '50px' }}></div>
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-9">
                             <div className="">
-                                <h1 data-wow-delay="0s" className="wow fadeInUp" style={{ color: 'black' }} >Utilizamos nuestra vasta experiencia, datos exclusivos y 
-                                tecnología de punta para generar retornos superiores</h1>
+                                <h1 data-wow-delay="0s" className="wow fadeInUp" style={{ color: 'black' }} >Desatamos el conocimiento acumulado, 
+                                datos exclusivos y tecnología avanzada. En cada paso, fusionamos innovación y experiencia para abrir nuevas fronteras en el éxito financiero.</h1>
                                 <div style={{ margin: '10px' }}></div>
                                 <p style={{ fontSize: '26px' }} data-wow-delay="0.1s" className="wow fadeInUp">Vamos más allá de las inversiones convencionales y 
                                 reconociendo que, con el tiempo, la inflación puede afectar el valor de propiedad.</p>
@@ -254,13 +254,13 @@ export default function Home() {
 {/* end Experiencia part1 */}
 
 {/* Experiencia part2 */}
-<div style={{ backgroundColor: 'white', padding: '80px'}}>
-            <h1 style={{ color: 'black', fontSize: '54px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp">Nuestra experiencia,</h1>
-            <h1 style={{ color: 'black', fontSize: '54px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp">disponible como</h1>
-            <h1 style={{ color: 'black', fontSize: '54px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp">servicio.</h1>
+<div className="div-black" style={{ backgroundColor: 'white', padding: '80px'}}>
+            <h1 style={{ color: 'black', fontSize: '54px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp white-txt">Nuestra experiencia,</h1>
+            <h1 style={{ color: 'black', fontSize: '54px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp white-txt">disponible como</h1>
+            <h1 style={{ color: 'black', fontSize: '54px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp white-txt">servicio.</h1>
             <div style={{ margin: '50px' }}></div>
-                <div style={{ backgroundColor: 'rgba(22, 22, 22, 1)', paddingRight: '10px', paddingBottom: '200px', borderRadius: '25px'  }}>
-                        <div className="col-md-6" style={{ textAlign: 'right', right: '0', justifyContent: 'right', left: '50%'}}>
+                <div className="div-text-slider">
+                        <div className="col-md-6 div-right-mobile" style={{ textAlign: 'right', right: '0', justifyContent: 'right', left: '50%'}}>
                             
                               {/*  <p style={{ fontSize: '26px', color: 'white'}} data-wow-delay="0s" className="wow fadeInUp" >El modelo de inversión inmobiliario que utilizamos como servicio 
                                 permite a inversores de todos los tamaños aprovechar la tecnología y servicios bajo demanda para adquirir, 
@@ -268,7 +268,7 @@ export default function Home() {
                                 los métodos tradicionales</p>
                                 <div style={{ margin: '10px' }}></div> */}
 
-                                <TextSlider1 />
+                        <TextcontentSlider />
 
                         </div>
                         <div className="logo-rotate logo-rotador">
@@ -282,7 +282,7 @@ export default function Home() {
 {/* end Experiencia part2 */}
 
 {/* Steps Soluciones */}
-<div style={{ padding: '100px' }}></div>
+<div className="mobile-none" style={{ padding: '100px' }}></div>
 <div className="tf-section create-sell">
                 <div className="themesflat-container">
                     <div className="row">
@@ -376,6 +376,11 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <div className="row">
+                                <div className="col-12">
+                                    <Link href="/market-wallet" className="tf-button style-1 h50 w190 m-auto">Empieza ya!<i className="icon-arrow-up-right2" /></Link>
+                                </div>
+                            </div>
             <div style={{ padding: '50px' }}></div>
 {/* end Steps Soluciones */}
 
@@ -481,12 +486,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                </div>
-                            <div className="row">
-                                <div className="col-12">
-                                    <Link href="/market-wallet" className="tf-button style-1 h50 w190 m-auto">Empieza ya!<i className="icon-arrow-up-right2" /></Link>
-                                </div>
-                            </div>
+                                </div>       
                         </div>
                     </div>
                     </Element>
