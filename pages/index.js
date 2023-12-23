@@ -8,8 +8,6 @@ import { Element } from 'react-scroll';
 import TextcontentSlider from "@/components/slider/TextcontentSlider"
 import { Swiper, SwiperSlide } from "swiper/react"
   
-
-
 const parallaxStyles = {
     backgroundImage: 'url("/assets/images/eagle1.png")', // Reemplaza con la ruta de tu imagen
     backgroundAttachment: 'fixed',
@@ -78,6 +76,7 @@ export default function Home() {
             <Layout headerStyle={1} footerStyle={1} pageCls="about-us-page">
 
             <div className="flat-pages-title-home2 relative">
+            <video autoplay muted loop playsinline src="../assets/video/planeta.mp4"></video>
             <div className="mobile-none" style={{ padding: '50px' }}></div>
                 <div className="themesflat-container w-full">
                     <div className="row">
@@ -97,7 +96,7 @@ export default function Home() {
 
 {/* Intro */}
                 <div>
-                    <div className="page-title about-us relative">
+                    <div className="page-title about-us relative" >
                         <div className="themesflat-container">
                             <div className="row">
                                 <div className="col-12 pages-title">
