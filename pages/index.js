@@ -559,33 +559,33 @@ export default function Home() {
                                 <div className="col-md-6">
                                     <div className="flat-accordion">
                                         <div data-wow-delay="0s" className="wow fadeInUp flat-toggle">
-                                            <h6 className={isActive.key == 1 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(1)}>1. Why are NFTs becoming popular?</h6>
+                                            <h6 className={isActive.key == 1 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(1)}>1. ¿Por qué los NFT están ganando popularidad?</h6>
                                             <div className="toggle-content" style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                                <p>Los NFTs (Tokens No Fungibles) están en auge debido a su capacidad para representar la propiedad única y verificable de activos digitales. Esta singularidad, respaldada por tecnologías blockchain, ha transformado la forma en que percibimos y comercializamos el arte, los coleccionables y otros activos digitales.</p>
                                             </div>
                                         </div>
                                         <div data-wow-delay="0s" className="wow fadeInUp flat-toggle">
-                                            <h6 className={isActive.key == 2 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(2)}>2. How do I keep my NFTs safe?</h6>
+                                            <h6 className={isActive.key == 2 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(2)}>2. ¿Cómo puedo mantener seguros mis NFTs?</h6>
                                             <div className="toggle-content" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                                <p>Para mantener seguros tus NFTs, utiliza billeteras digitales seguras y resguarda tus claves privadas. Evita compartir información sensible y verifica la autenticidad de los contratos inteligentes antes de realizar transacciones. La seguridad en el almacenamiento de claves y la precaución son fundamentales.</p>
                                             </div>
                                         </div>
                                         <div data-wow-delay="0s" className="wow fadeInUp flat-toggle">
-                                            <h6 className={isActive.key == 3 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(3)}>3. What is blockchain?</h6>
+                                            <h6 className={isActive.key == 3 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(3)}>3. ¿Qué es blockchain?</h6>
                                             <div className="toggle-content" style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
-                                                <p>Blockchain is a shared, immutable ledger that facilitates the process of recording transactions and tracking assets in a business network. An asset can be tangible (a house, car, cash, land) or intangible (intellectual property, patents, copyrights, branding). Virtually anything of value can be tracked and traded on a blockchain network, reducing risk and cutting costs for all involved</p>
+                                                <p>Blockchain es una tecnología de registro distribuido que garantiza la transparencia y seguridad de las transacciones. Consiste en bloques encadenados, cada uno conteniendo datos y un hash del bloque anterior. Esta estructura inmutable y descentralizada es la base de la confianza en diversas aplicaciones, como las criptomonedas y la tokenización.</p>
                                             </div>
                                         </div>
                                         <div data-wow-delay="0s" className="wow fadeInUp flat-toggle">
-                                            <h6 className={isActive.key == 4 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(4)}>4. What is an NFT?</h6>
+                                            <h6 className={isActive.key == 4 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(4)}>4. ¿Qué es un NFT?</h6>
                                             <div className="toggle-content" style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                                <p>Un NFT, o Token No Fungible, es una representación única y verificable de un activo, respaldada por blockchain. Cada NFT tiene información exclusiva que lo distingue de otros, lo que lo convierte en una herramienta invaluable para autenticar y comercializar activos digitales.</p>
                                             </div>
                                         </div>
                                         <div data-wow-delay="0s" className="wow fadeInUp flat-toggle">
-                                            <h6 className={isActive.key == 5 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(5)}>5. How do I set up my Ledger?</h6>
+                                            <h6 className={isActive.key == 5 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(5)}>5. ¿Cómo configuro mi cuenta?</h6>
                                             <div className="toggle-content" style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                                <p>Configurar tu cuenta es sencillo. Ve a "login" en la barra de navegción, sigue los pasos de registro y completa la información necesaria. Asegúrate de proteger tus credenciales y seguir las indicaciones para acceder fácilmente a tu cuenta.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -593,33 +593,33 @@ export default function Home() {
                                 <div className="col-md-6">
                                     <div className="flat-accordion2">
                                         <div data-wow-delay="0s" className="wow fadeInUp flat-toggle2">
-                                            <h6 className={isActive.key == 6 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(6)}>6. Why are NFTs becoming popular?</h6>
+                                            <h6 className={isActive.key == 6 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(6)}>6. ¿Qué es la tokenización?</h6>
                                             <div className="toggle-content" style={{ display: `${isActive.key == 6 ? "block" : "none"}` }}>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                                <p>La tokenización es el proceso de convertir activos físicos o digitales en tokens en una cadena de bloques. Estos tokens son representaciones digitales únicas que pueden ser transferibles, negociables y verificables de manera eficiente, ofreciendo nuevas oportunidades de inversión y comercio.</p>
                                             </div>
                                         </div>
                                         <div data-wow-delay="0s" className="wow fadeInUp flat-toggle2">
-                                            <h6 className={isActive.key == 7 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(7)}>7. How do I keep my NFTs safe?</h6>
+                                            <h6 className={isActive.key == 7 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(7)}>7. ¿Qué puedo tokenizar?</h6>
                                             <div className="toggle-content" style={{ display: `${isActive.key == 7 ? "block" : "none"}` }}>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                                <p>Puedes tokenizar una variedad de activos, incluyendo bienes raíces, obras de arte, coleccionables y más. La tokenización permite fraccionar la propiedad, facilitando la participación de inversores en activos que anteriormente podrían haber estado fuera de su alcance.</p>
                                             </div>
                                         </div>
                                         <div data-wow-delay="0s" className="wow fadeInUp flat-toggle2">
-                                            <h6 className={isActive.key == 8 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(8)}>8. What is blockchain?</h6>
+                                            <h6 className={isActive.key == 8 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(8)}>8. ¿Por qué debería tokenizar mis activos?</h6>
                                             <div className="toggle-content" style={{ display: `${isActive.key == 8 ? "block" : "none"}` }}>
-                                                <p>Blockchain is a shared, immutable ledger that facilitates the process of recording transactions and tracking assets in a business network. An asset can be tangible (a house, car, cash, land) or intangible (intellectual property, patents, copyrights, branding). Virtually anything of value can be tracked and traded on a blockchain network, reducing risk and cutting costs for all involved</p>
+                                                <p>La tokenización proporciona liquidez, accesibilidad y transparencia. Al tokenizar, amplías el acceso a inversionistas, facilitas la negociación de fracciones de activos y mejoras la eficiencia en la gestión de activos.</p>
                                             </div>
                                         </div>
                                         <div data-wow-delay="0s" className="wow fadeInUp flat-toggle2">
-                                            <h6 className={isActive.key == 9 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(9)}>9. What is an NFT?</h6>
+                                            <h6 className={isActive.key == 9 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(9)}>9. ¿Por qué Aztecaz para mis activos tokenizados?</h6>
                                             <div className="toggle-content" style={{ display: `${isActive.key == 9 ? "block" : "none"}` }}>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                                <p>Aztecaz ofrece una plataforma segura y eficiente para la comercialización de activos tokenizados. Nuestra experiencia en blockchain y en el mercado inmobiliario garantiza una transición fluida hacia la tokenización, brindando confianza y respaldo a tus inversiones.</p>
                                             </div>
                                         </div>
                                         <div data-wow-delay="0s" className="wow fadeInUp flat-toggle2">
-                                            <h6 className={isActive.key == 10 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(10)}>10. How do I set up my Ledger?</h6>
+                                            <h6 className={isActive.key == 10 ? "toggle-title active" : "toggle-title"} onClick={() => handleToggle(10)}>10. ¿Ventajas de combinar real estate vs real estate blockchain?</h6>
                                             <div className="toggle-content" style={{ display: `${isActive.key == 10 ? "block" : "none"}` }}>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                                <p>Combinar bienes raíces convencionales con la tokenización proporciona liquidez instantánea, fracciona la propiedad para atraer a más inversores y agiliza los procesos. Esto democratiza el acceso a inversiones inmobiliarias y crea oportunidades innovadoras en el mercado.</p>
                                             </div>
                                         </div>
                                     </div>

@@ -66,10 +66,10 @@ export default function Footer1() {
                         <p>© {new Date().getFullYear()} ATECAZ: HUB INMOBILIARIO </p>
                         <ul className="flex">
                             <li>
-                                <Link href="#">Privacy Policy</Link>
+                                <Link href="/terms-condition">Privacy Policy</Link>
                             </li>
                             <li>
-                                <Link href="#">Terms of Service</Link>
+                                <Link href="/terms-condition">Terms of Service</Link>
                             </li>
                         </ul>
                     </div>

@@ -34,8 +34,11 @@ export default function Header1({ isMobileMenu, handleMobileMenu }) {
                                 <div className="wrap-box flex">
                                     <div id="site-logo">
                                         <div id="site-logo-inner">
-                                            <Link href="/" rel="home" className="main-logo">
+                                            <Link href="/" rel="home" className="main-logo mobile-none">
                                                 <img id="logo_header" src="/assets/images/logo/logo_navbar_dark.png" data-retina="assets/images/logo/logo_h_dark.png" />
+                                            </Link>
+                                            <Link href="/" rel="home" className="web-none">
+                                                <img id="logo_header" src="/assets/images/logo/icon_dark.png" style={{ width: '80px'}} data-retina="assets/images/logo/icon_dark.png" />
                                             </Link>
                                         </div>
                                     </div>{/* logo */}

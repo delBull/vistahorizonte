@@ -2684,6 +2684,9 @@ div#page {
     position: relative;
     color: darkgray;
 }
+.web-none {
+    display: none;
+}
 
 
   /* Estilos específicos para dispositivos móviles (tamaño de pantalla máximo de 599px) */
@@ -2708,6 +2711,9 @@ div#page {
     .mobile-none {
         display: none;
     }
+    .web-none {
+        display: block;
+    }
     .swipper-bg {
         height: 400px;
     }
@@ -2724,11 +2730,23 @@ div#page {
     }
     li.p-unselectable-text {
         display: inline-grid;
+        width: 130px;
+        text-align: center;
+    }
+    .tabview-title {
+        padding: 14px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        color: darkgray;
     }
     .logo-rotador {
         right: 35%;
     }
     .tf-section.create-sell {
         margin-top: 50px;
+    }
+    .main-logo {
+        width: 50px !important;
     }
   }
