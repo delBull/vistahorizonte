@@ -8,8 +8,10 @@ import { Element } from 'react-scroll';
 import TextcontentSlider from "@/components/slider/TextcontentSlider"
 import { Swiper, SwiperSlide } from "swiper/react"
 import video from '../public/assets/planeta.mp4';
-  
-
+import fallbackImage from '../public/assets/fallback-image.jpeg';
+import { TabView, TabPanel } from 'primereact/tabview';
+import { SplitButton } from 'primereact/splitbutton';
+import { Avatar } from 'primereact/avatar';
 
 const parallaxStyles = {
     backgroundImage: 'url("/assets/images/eagle1.png")', // Reemplaza con la ruta de tu imagen
@@ -72,6 +74,16 @@ export default function Home() {
             })
         }
     }
+
+    const tab1HeaderTemplate = (options) => {
+        return (
+            <button type="button" onClick={options.onClick} className={'tabview-title ${options.className}'}>
+                <i className="pi pi-prime mr-2" />
+                {options.titleElement}
+            </button>
+        );
+    };
+
     return (
         <>
 
@@ -81,7 +93,12 @@ export default function Home() {
 {/* Cover */}
             <div className="flat-pages-title-home2 relative bgContainer">
             <div className="overlay"></div>
-            <video src={video} autoPlay loop muted />
+            {/* Background Video */}
+            <video src={video} autoPlay loop muted playsInline onCanPlay={() => { /* Acciones adicionales si es necesario */ }}>
+                <source src={video} type="video/mp4" />
+                <img src={fallbackImage} alt="Imagen de respaldo" />
+            </video>
+            {/* end Background Video */}
             <div className="container">
                 <div className="themesflat-container w-full">
                     <div className="row">
@@ -252,23 +269,59 @@ export default function Home() {
 {/* end Experiencia part1 */}
 
 {/* Experiencia part2 */}
-<div className="div-black" style={{ backgroundColor: 'white', padding: '80px'}}>
+<div className="div-black" style={{ backgroundColor: 'white', padding: '100px'}}>
             <h1 style={{ color: 'black', fontSize: '52px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp white-txt">Nuestra experiencia,</h1>
             <h1 style={{ color: 'black', fontSize: '52px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp white-txt">disponible como</h1>
             <h1 style={{ color: 'black', fontSize: '52px', textAlign: 'right' }} data-wow-delay="0.1s" className="wow fadeInUp white-txt">servicio.</h1>
-            <div style={{ margin: '50px' }}></div>
+            <div style={{ margin: '10px' }}></div>
                 <div className="div-text-slider">
-                        <div className="col-md-6 div-right-mobile" style={{ textAlign: 'right', right: '0', justifyContent: 'right', left: '50%'}}>
                             
                               {/*  <p style={{ fontSize: '26px', color: 'white'}} data-wow-delay="0s" className="wow fadeInUp" >El modelo de inversión inmobiliario que utilizamos como servicio 
                                 permite a inversores de todos los tamaños aprovechar la tecnología y servicios bajo demanda para adquirir, 
                                 gestionar y vender propiedades a gran escala con mayor precisión, rapidez y eficiencia que 
                                 los métodos tradicionales</p>
                                 <div style={{ margin: '10px' }}></div> */}
-
-                        <TextcontentSlider />
-
-                        </div>
+{/* Table View */}
+<TabView>
+<TabPanel header="Integral" headerTemplate={tab1HeaderTemplate}>
+        <p style={{ fontSize: '22px', color: 'white'}} data-wow-delay="0s" className="m-2 wow fadeInUp mobile-txt-18">
+        Nuestro modelo abarca cada aspecto, desde construcción hasta diseño y fondeo. Creemos en experiencias inigualables, 
+        brindando soporte completo para cada proyecto. Ya sea construir desde cero o transformar espacios, nuestro 
+        enfoque integral asegura un viaje sin complicaciones hacia el futuro del bienes raíces. ¡Estamos aquí para 
+        materializar tus sueños! 🏗️✨
+        </p>
+        <div style={{ padding: '10px' }}></div>
+        <Link href="/" className="tabview-title" style={{ fontSize: '14px'}}>Agenda para personalizar tu experiencia</Link>
+    </TabPanel>
+    <TabPanel header="Revolución" headerTemplate={tab1HeaderTemplate}>
+        <p style={{ fontSize: '22px', color: 'white'}} data-wow-delay="0s" className="m-2 wow fadeInUp mobile-txt-18">
+        Con Aztecaz,el acceso es más amplio y la gestión de inversiones inmobiliarias es más fácil. Estamos redefiniendo 
+        completamente cómo ganas en el mundo de las rentas inmobiliarias. ¡Prepárate para la revolución con Aztecaz! 🚀
+        </p>
+    </TabPanel>
+    <TabPanel header="Versatilidad" headerTemplate={tab1HeaderTemplate}>
+        <p style={{ fontSize: '22px', color: 'white'}} data-wow-delay="0s" className="m-2 wow fadeInUp mobile-txt-18">
+        El modelo de inversión inmobiliario que utilizamos como servicio permite a inversores de todos los tamaños aprovechar la tecnología y servicios bajo demanda para adquirir, 
+        gestionar y vender propiedades a gran escala con mayor precisión, rapidez y eficiencia que los métodos tradicionales
+        </p>
+    </TabPanel>
+    <TabPanel header="Oportunidad" headerTemplate={tab1HeaderTemplate}>
+        <p style={{ fontSize: '22px', color: 'white'}} data-wow-delay="0s" className="m-2 wow fadeInUp mobile-txt-18">
+        En nuestro modelo único, estamos aquí para facilitar el camino de agencias y agentes inmobiliarios. Simplificamos procesos y 
+        desbloqueamos oportunidades, convirtiendo la búsqueda del lugar perfecto para comprar o vender en una 
+        experiencia cósmica. Con tecnología avanzada, estamos transformando el mundo inmobiliario. ¡Bienvenido al 
+        futuro de los bienes raíces! 🌌🏡
+        </p>
+    </TabPanel>
+    <TabPanel header="Para todos" headerTemplate={tab1HeaderTemplate}>
+        <p style={{ fontSize: '22px', color: 'white'}} data-wow-delay="0s" className="m-2 wow fadeInUp mobile-txt-18">
+        En el mundo de las inversiones, nuestro modelo es para todos: desde los pequeños aventureros hasta los medianos astutos 
+        y los grandes titanes. Aztecaz tiene oportunidades emocionantes y diversificadas para cada inversor, ya sea 
+        principiante o experto. ¡Bienvenido a un nuevo horizonte de posibilidades financieras! 🚀💼
+        </p>
+    </TabPanel>
+</TabView>
+{/* Table View */}
                         <div className="logo-rotate logo-rotador">
                                     <div className="logoimg">
                                         <img src="/assets/images/logo/icon.png" alt="" />
@@ -603,17 +656,15 @@ export default function Home() {
                                 <div data-wow-delay="0s" className="wow fadeInUp col-md-4">
                                     <div className="box-icon-item">
                                         <img src="/assets/images/box-icon/address.png" alt="" />
-                                        <div className="title"><Link href="#">Ubicación</Link></div>
-                                        <p>Bahía de Banderas, Bucerías, Nayarit.</p>
+                                        <div className="title"><Link href="#">Headquarters</Link></div>
+                                        <p>Bahía de Banderas, Nayarit.</p>
                                     </div>
                                 </div>
                                 <div data-wow-delay="0.1s" className="wow fadeInUp col-md-4">
                                     <div className="box-icon-item">
                                         <img src="/assets/images/box-icon/email.png" alt="" />
                                         <div className="title"><Link href="#">Email</Link></div>
-                                        <p>support@aztecaz.com
-                                        ayuda@aztecaz.com
-                                        </p>
+                                        <p>ayuda@aztecaz.com</p>
                                     </div>
                                 </div>
                                 <div data-wow-delay="0.2s" className="wow fadeInUp col-md-4">

@@ -25,7 +25,7 @@ export default function Header1({ isMobileMenu, handleMobileMenu }) {
   
     return (
       <>
-      <Headroom>
+      <Headroom style={{ zIndex: '100'}}>
         <header id="header_main" className={`header_1 header-fixed ${shouldHide ? 'ocultar' : ''}`}>
                 <div className="themesflat-container">
                     <div className="row">

@@ -255,7 +255,7 @@
         width: 100%;
     }
     .flat-wallet {
-        margin-right: 56px;
+        margin-right: 26px;
     }
     .header_1 #main-nav ,
     .header_1 .canvas {
@@ -492,7 +492,7 @@
         margin-top: 0 !important;
     }
     #wallet-header {
-        display: none;
+        display: block;
     }
     .footer-bottom {
         flex-wrap: wrap;
