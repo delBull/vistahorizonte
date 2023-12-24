@@ -7,7 +7,10 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Element } from 'react-scroll';
 import TextcontentSlider from "@/components/slider/TextcontentSlider"
 import { Swiper, SwiperSlide } from "swiper/react"
+import video from '../public/assets/planeta.mp4';
   
+
+
 const parallaxStyles = {
     backgroundImage: 'url("/assets/images/eagle1.png")', // Reemplaza con la ruta de tu imagen
     backgroundAttachment: 'fixed',
@@ -72,12 +75,14 @@ export default function Home() {
     return (
         <>
 
-{/* Cover */}
+
             <Layout headerStyle={1} footerStyle={1} pageCls="about-us-page">
 
-            <div className="flat-pages-title-home2 relative">
-            <video autoplay muted loop playsinline src="../assets/video/planeta.mp4"></video>
-            <div className="mobile-none" style={{ padding: '50px' }}></div>
+{/* Cover */}
+            <div className="flat-pages-title-home2 relative bgContainer">
+            <div className="overlay"></div>
+            <video src={video} autoPlay loop muted />
+            <div className="container">
                 <div className="themesflat-container w-full">
                     <div className="row">
                         <div className="col-md-9">
@@ -89,6 +94,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -96,7 +102,7 @@ export default function Home() {
 
 {/* Intro */}
                 <div>
-                    <div className="page-title about-us relative" >
+                    <div className="page-title about-us relative">
                         <div className="themesflat-container">
                             <div className="row">
                                 <div className="col-12 pages-title">

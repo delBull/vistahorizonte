@@ -2,6 +2,7 @@ import Link from "next/link"
 import React, { useState, useEffect } from 'react';
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
+import Headroom from 'react-headroom';
 export default function Header1({ isMobileMenu, handleMobileMenu }) {
     const [isSidebar, setSidebar] = useState(false);
     const handleSidebar = () => setSidebar(!isSidebar)
@@ -24,6 +25,7 @@ export default function Header1({ isMobileMenu, handleMobileMenu }) {
   
     return (
       <>
+      <Headroom style={{ zIndex: 1000 }}>
         <header id="header_main" className={`header_1 header-fixed ${shouldHide ? 'ocultar' : ''}`}>
                 <div className="themesflat-container">
                     <div className="row">
@@ -131,7 +133,7 @@ export default function Header1({ isMobileMenu, handleMobileMenu }) {
                     </div>
                 </div>
             </header>
-
+            </Headroom>
         </>
     )
 }
