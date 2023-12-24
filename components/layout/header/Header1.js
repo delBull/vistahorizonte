@@ -25,7 +25,7 @@ export default function Header1({ isMobileMenu, handleMobileMenu }) {
   
     return (
       <>
-      <Headroom style={{ zIndex: 1000 }}>
+      <Headroom>
         <header id="header_main" className={`header_1 header-fixed ${shouldHide ? 'ocultar' : ''}`}>
                 <div className="themesflat-container">
                     <div className="row">
@@ -39,9 +39,8 @@ export default function Header1({ isMobileMenu, handleMobileMenu }) {
                                             </Link>
                                         </div>
                                     </div>{/* logo */}
-                                    <div className="mobile-button" onClick={handleMobileMenu}>
-                                        <span />
-                                    </div>{/* /.mobile-button */}
+                                  {/* <div className="mobile-button" onClick={handleMobileMenu}>
+                                        <span /></div> */} {/* /.mobile-button */}
                                     <nav id="main-nav" className="main-nav">
                                         <Menu />
                                     </nav>{/* /#main-nav */}
@@ -52,9 +51,8 @@ export default function Header1({ isMobileMenu, handleMobileMenu }) {
                                                 <i className="icon-wa" />
                                             </Link>
                                         </div>
-                                        <div className="canvas" onClick={handleSidebar}>
-                                            <span />
-                                        </div>
+                                       {/* <div className="canvas" onClick={handleSidebar}> 
+                                            <span /> </div> */}
                                     </div>
                                 </div>
                             </div>
