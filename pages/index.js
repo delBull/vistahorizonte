@@ -291,7 +291,7 @@ export default function Home() {
         materializar tus sueños! 🏗️✨
         </p>
         <div style={{ padding: '10px' }}></div>
-        <Link href="/" className="tabview-title" style={{ fontSize: '14px'}}>Agenda para personalizar tu experiencia</Link>
+        <Link href="/" className="tabview-title" style={{ fontSize: '14px', fontWeight: 'bold'}}>Personaliza tu experiencia</Link>
     </TabPanel>
     <TabPanel header="Revolución" headerTemplate={tab1HeaderTemplate}>
         <p style={{ fontSize: '22px', color: 'white'}} data-wow-delay="0s" className="m-2 wow fadeInUp mobile-txt-18">

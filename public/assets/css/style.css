@@ -2707,6 +2707,7 @@ div#page {
     }
     .logo-rotador {
         margin-top: 50px;
+        right: 30%;
     }
     .mobile-none {
         display: none;
@@ -2739,9 +2740,6 @@ div#page {
         margin-bottom: 10px;
         position: relative;
         color: darkgray;
-    }
-    .logo-rotador {
-        right: 35%;
     }
     .tf-section.create-sell {
         margin-top: 50px;
