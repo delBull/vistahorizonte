@@ -5,13 +5,10 @@ import Link from "next/link"
 import Action8 from "@/components/sections/Action8"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Element } from 'react-scroll';
-import TextcontentSlider from "@/components/slider/TextcontentSlider"
 import { Swiper, SwiperSlide } from "swiper/react"
 import video from '../public/assets/planeta.mp4';
 import fallbackImage from '../public/assets/fallback-image.jpeg';
 import { TabView, TabPanel } from 'primereact/tabview';
-import { SplitButton } from 'primereact/splitbutton';
-import { Avatar } from 'primereact/avatar';
 
 const parallaxStyles = {
     backgroundImage: 'url("/assets/images/eagle1.png")', // Reemplaza con la ruta de tu imagen
@@ -104,10 +101,10 @@ export default function Home() {
                     <div className="row">
                         <div className="col-md-9">
                             <div className="content">
-                                <h1 data-wow-delay="0s" className="wow fadeInUp">Invierte En El Futuro Real Estate</h1>
-                                        <p data-wow-delay="0.1s" className="wow fadeInUp" style={{ fontSize: '26px', lineHeight: '1.1' }}>Aplicacamos herramientas blockchain para impulsar el rendimiento en el sector inmobiliario.</p>
+                                <h1 data-wow-delay="0s" className="wow fadeInUp">Invierte en el futuro de la Tokenización Inmobiliaria</h1>
+                                        <p data-wow-delay="0.1s" className="wow fadeInUp" style={{ fontSize: '26px', lineHeight: '1.1' }}>Aplicacamos herramientas blockchain para impulsar el crecimiento en el sector inmobiliario.</p>
                                 <div data-wow-delay="0.2s" className="wow fadeInUp flat-button flex">
-                                    <Link href="/market-wallet" className="tf-button style-1 h50 w190 mr-30">¡Empieza Ahora!<i className="icon-arrow-up-right2" /></Link>
+                                    <Link href="/coming-soon" className="tf-button style-1 h50 w190 mr-30">¡Empieza Ahora!<i className="icon-arrow-up-right2" /></Link>
                                 </div>
                             </div>
                         </div>
@@ -119,13 +116,98 @@ export default function Home() {
 
 {/* Intro */}
                 <div>
-                    <div className="page-title about-us relative">
+                    
+                <div className="themesflat-container w-full white-section">
+                <div style={{ padding: '50px' }}></div>
+                    <div className="row">
+                        <div className="col-md-9">
+                            <div className="">
+                                <h1 data-wow-delay="0s" className="wow fadeInUp" style={{ color: 'black' }}> En Aztecaz, aspiramos a revolucionar el panorama inmobiliario en México. 
+                                        Nuestro gran propósito es convertirnos en el pionero de la tokenización de activos, 
+                                        desafiando las limitadas oportunidades que actualmente enfrenta nuestra comunidad. 
+                                        Estamos aquí para transformar la forma en que se invierte en bienes raíces, brindando nuevas 
+                                        y emocionantes posibilidades a todos.</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{ padding: '80px' }}></div>
+                </div>
+{/* end Intro */}
+
+{/* Problema */}
+<Element name="problema">
+<div style={{ padding: '50px' }}></div>
+<div className="tf-section create-sell">
+                <div className="themesflat-container">
+                    <div className="row pl-2-5">
+                        <div className="col-md-12">
+                            <div className="heading-section">
+                                <h2 className="tf-title pb-30">Factores clave del <br /> sector inmobiliario</h2>
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="grid-box-icon">
+                                <div data-wow-delay="0s" className="wow fadeInUp tf-box-icon style-1 relative mb-0">
+                                    <div className="image">
+                                     {/*   <img src="/assets/images/box-icon/icon-01.png" alt="" /> */}
+                                        <p>Muchas Barreras</p>
+                                    </div>
+                                   {/* <h4 className="heading"><Link href="/contact-us">Título</Link></h4> */}
+                                    <p style={{ color: 'white'}} className="content">Enfrentamos una industria inmobiliaria ilíquida, 
+                                    llena de intermediarios y barreras que excluyen a muchos. Queremos cambiar eso y 
+                                    abrir las puertas para todos.</p>
+                                </div>
+                                <div data-wow-delay="0.1s" className="wow fadeInUp tf-box-icon style-1 relative mb-0">
+                                    <div className="image">
+                                      {/*  <img src="/assets/images/box-icon/icon-02.png" alt="" /> */}
+                                        <p>Atascado en el Pasado</p>
+                                    </div>
+                                  {/*  <h4 className="heading"><Link href="/contact-us">Create collection</Link></h4> */}
+                                    <p style={{ color: 'white'}} className="content">Nos apoyamos en nuestra experiencia de 30 años y destacamos 
+                                    cómo la tecnología blockchain es clave. Dreamhub es el socio tecnológico que hace 
+                                    posible la revolución.</p>
+                                </div>
+                                <div data-wow-delay="0.2s" className="wow fadeInUp tf-box-icon style-1 relative mb-0">
+                                    <div className="image">
+                                      {/*  <img src="/assets/images/box-icon/icon-03.png" alt="" /> */}
+                                        <p>Una nueva Normalidad</p>
+                                    </div>
+                                  {/*  <h4 className="heading"><Link href="/contact-us">Add your NFTs</Link></h4> */}
+                                    <p style={{ color: 'white'}} className="content">Blockchain hace que la tokenización sea inclusiva, 
+                                    brindando acceso global a cualquier inversor, sin importar el tamaño del capital 
+                                    inicial. Nuestra experiencia y conocimientos respaldan esta transformación.</p>
+                                </div>
+                              {/*  <div data-wow-delay="0.3s" className="wow fadeInUp tf-box-icon style-1 relative mb-0">
+                                    <div className="image">
+                                        <img src="/assets/images/box-icon/icon-04.png" alt="" /> 
+                                        <p>Step 4</p>
+                                    </div>
+                                   <h4 className="heading"><Link href="/contact-us">Sell your NFTs</Link></h4> 
+                                    <p className="content">Abrimos el mercado inmobiliario a todos, permitiendo que 
+                                    cualquiera pueda participar en la tokenización de activos, brindando flexibilidad y 
+                                    liquidez.</p>
+                                </div> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="box-icon-img">
+                                <img src="/assets/images/backgroup-section/img-02.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="page-title about-us relative">
                         <div className="themesflat-container">
                             <div className="row">
+                            <div className="col-md-12">
+                                    <div className="heading-section-1">
+                                    </div>
+                                    <div style={{ padding: '10px' }}></div>
+                                </div>
                                 <div className="col-12 pages-title">
                                     <div className="icon-background">
                                         <img className="absolute item2" src="/assets/images/item-background/item10.png" alt="" />
-                                        <img className="absolute item3" src="/assets/images/item-background/item12.png" alt="" />
                                         <img className="absolute item4" src="/assets/images/item-background/item13.png" alt="" />
                                     </div>
                                     <div className="relative">
@@ -242,8 +324,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div style={{ padding: '50px' }}></div>
-{/* end Intro */}
+            </Element>
+{/* End Problema */}
 
 {/* Experiencia part1 */}
             <Element name="experiencia">
@@ -431,7 +513,7 @@ export default function Home() {
             </div>
             <div className="row">
                                 <div className="col-12">
-                                    <Link href="/market-wallet" className="tf-button style-1 h50 w190 m-auto">Empieza ya!<i className="icon-arrow-up-right2" /></Link>
+                                    <Link href="/coming-soon" className="tf-button style-1 h50 w190 m-auto">Empieza ya!<i className="icon-arrow-up-right2" /></Link>
                                 </div>
                             </div>
             <div style={{ padding: '50px' }}></div>
@@ -664,14 +746,14 @@ export default function Home() {
                                     <div className="box-icon-item">
                                         <img src="/assets/images/box-icon/email.png" alt="" />
                                         <div className="title"><Link href="#">Email</Link></div>
-                                        <p>ayuda@aztecaz.com</p>
+                                        <p>ayuda@aztecaz.xyz</p>
                                     </div>
                                 </div>
                                 <div data-wow-delay="0.2s" className="wow fadeInUp col-md-4">
                                     <div className="box-icon-item">
                                         <img src="/assets/images/box-icon/phone.png" alt="" />
                                         <div className="title"><Link href="#">WhatsApp</Link></div>
-                                        <p>+(52) 322-102-3028</p>
+                                        <p>Conéctate con nosotros</p>
                                     </div>
                                 </div>
                             </div>

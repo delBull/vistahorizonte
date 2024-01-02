@@ -13,6 +13,9 @@ export default function Menu() {
                     <Link href="/" rel="home" style={{ color: 'black'}} > Inicio </Link>
                 </li>
                 <li>
+                    <Link to="problema" smooth={true} duration={500} offset={-0} style={{ color: 'black'}}> El Problema </Link>
+                </li>
+                <li>
                     <Link to="experiencia" smooth={true} duration={500} offset={-0} style={{ color: 'black'}}> ¿Por qué Aztecaz? </Link>
                 </li>
                 <li>

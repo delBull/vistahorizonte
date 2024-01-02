@@ -14,9 +14,9 @@ export default function Action8() {
                                 <div className="tf-tsparticles">
                                     <div id="tsparticles1" data-color="#161616" data-line="#000" />
                                 </div>
-                                <h2>Compra, vende, usa crypto, comercia con NFTs y más.</h2>
+                                <h2>Compra y vende tickets inmobiliarios, usa crypto, comercia con NFTs y más!</h2>
                                 <div className="flat-button flex">
-                                    <Link href="/market-wallet" className="tf-button style-2 h50 w190 mr-10">Explora más<i className="icon-arrow-up-right2" /></Link>
+                                    <Link href="/coming-soon" className="tf-button style-2 h50 w190 mr-10">Explora más<i className="icon-arrow-up-right2" /></Link>
                                 </div>
                                 <div className="bg-home7">
                                     <AutoSlider1 />
