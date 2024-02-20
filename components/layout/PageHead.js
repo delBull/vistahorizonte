@@ -5,7 +5,7 @@ const PageHead = ({ headTitle }) => {
         <>
             <Head>
                 <title>
-                    {headTitle ? headTitle : "AZTECAS | HUB Inmobiliario"}
+                    {headTitle ? headTitle : "Vista Horizonte | Eleva tu estilo de vida junto al mar"}
                 </title>
             </Head>
         </>
