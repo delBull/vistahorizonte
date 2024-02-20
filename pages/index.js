@@ -28,11 +28,11 @@ export default function Home() {
                                 </div>
                             </div>
                             <h1>Coming soon</h1>
-                           <p>Mientras tanto deja tu email para mantenerte al tanto</p>
-                            <fieldset className="email">
+                           <p>Contacta a un agente</p>
+                           {/* <fieldset className="email">
                                 <input type="email" className="style-1" id="email" placeholder="Email*" name="email" tabIndex={2} aria-required="true" required />
-                            </fieldset>
-                            <Link href="#" className="tf-button style-1 h50">Subscríbete<i className="icon-arrow-up-right2" /></Link> 
+                             </fieldset> */}
+                            <Link href="https://api.whatsapp.com/send/?phone=523223816241&text=Hola,%20me%20interesa%20saber%20mas%20de%20Vista%20Horizonte" className="tf-button style-1 h50">+52 322 381 62 41<i className="icon-arrow-up-right2" /></Link> 
                         </div> 
                        <div className="widget-social">
                             <ul className="flex justify-center">
